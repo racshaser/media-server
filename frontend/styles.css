@@ -9,10 +9,16 @@ body {
 
 .button {
     display: inline-block;
+    vertical-align: top;
     border-radius: 25px;
     margin: 5px;
     height: calc(50vw - 25px);
     width: calc(50vw - 25px);
+}
+
+.button img {
+    height: 80px;
+    width: auto;
 }
 
 .yellow {
