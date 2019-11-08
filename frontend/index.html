@@ -2,61 +2,63 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    >
     <title>Media server</title>
     <link
         rel="stylesheet"
         href="./styles.css"
     >
+    <script src="scripts.js"></script>
 </head>
 <body>
     <div class="row">
-        <button class="button yellow">
+        <button class="button yellow" onclick="resolver('volumeDown')">
             <img
-                src="img/icons8-low-volume-50.png"
+                src="img/down-arrow.svg"
                 alt="Volume down"
             >
         </button>
-        <button class="button yellow">
+        <button class="button yellow" onclick="resolver('volumeUp')">
             <img
-                src="img/icons8-audio-50.png"
+                src="img/up-arrow.svg"
                 alt="Volume up"
             >
         </button>
     </div>
     <div class="row">
-        <button class="button green">
+        <button class="button green" onclick="resolver('mediaPlay')">
             <img
-                src="img/icons8-play-50.png"
+                src="img/play-button.svg"
                 alt="Media play"
             >
         </button>
-        <button class="button green">
+        <button class="button green" onclick="resolver('mediaPause')">
             <img
-                src="img/icons8-pause-50.png"
+                src="img/pause.svg"
                 alt="Media pause"
             >
         </button>
     </div>
     <div class="row">
-        <button class="button green">
+        <button class="button green" onclick="resolver('mediaPrev')">
             <img
-                src="img/icons8-skip-to-start-50.png"
+                src="img/back.svg"
                 alt="Media previous"
             >
         </button>
-        <button class="button green">
+        <button class="button green" onclick="resolver('mediaNext')">
             <img
-                src="img/icons8-end-50.png"
+                src="img/next-1.svg"
                 alt="Media next"
             >
         </button>
     </div>
     <div class="row">
         <button class="button red">
-            <img
-                src="img/icons8-moon-and-stars-60.png"
-                alt="Sleep"
-            >
+            SLEEP
         </button>
         <button class="button gray" disabled>
             SLEEP

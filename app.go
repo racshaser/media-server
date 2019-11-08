@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"github.com/go-vgo/robotgo"
 	"github.com/gorilla/mux"
 	"net/http"
@@ -20,6 +21,11 @@ func main() {
 	router.HandleFunc("/media/prev", MediaPrev)
 	router.HandleFunc("/media/next", MediaNext)
 
+	// Serve static main page
+	router.PathPrefix("/").Handler(http.FileServer(http.Dir("./frontend/")))
+
+	// Start server
+	fmt.Println("The media server starts at 3030 port")
 	_ = http.ListenAndServe(":3030", router)
 }
 
